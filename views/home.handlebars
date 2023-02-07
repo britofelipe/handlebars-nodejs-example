@@ -1,0 +1,9 @@
+<h1>Products</h1>
+<h2>See our latest products</h2>
+{{#each products}}
+    <div>
+        <h3>{{this.title}}</h3>
+        <p>${{this.price}}</p>
+        <p><a href="/product/{{this.id}}">See more</a></p>
+    </div>
+{{/each}}
